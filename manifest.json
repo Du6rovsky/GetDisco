@@ -1,0 +1,26 @@
+{
+  "name": "Get DISCO",
+  "description": "Extension for auto filling payment data",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "cookies",
+    "webNavigation",
+    "webRequest",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["lib/jquery.js", "lib/lodash.js", "content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

@@ -1,0 +1,21 @@
+body {
+    width: 95px;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.list a {
+    color: black;
+    cursor: pointer;
+    font-family: Arial, san-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.list a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
